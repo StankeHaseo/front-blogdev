@@ -44,7 +44,7 @@ const Register = () => {
             required
             value={displayName}
             onChange={(e) => setDisplayName(e.target.value)}
-            placeholder="Entre con seu nomade nome"></input>
+            placeholder="Digite seu nome"></input>
         </label>
         <label>
           <span>E-mail: </span>
@@ -54,7 +54,7 @@ const Register = () => {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Entre com seu e-mail"></input>
+            placeholder="Digite seu e-mail"></input>
         </label>
         <label>
           <span>Senha: </span>
@@ -64,7 +64,7 @@ const Register = () => {
             required
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            placeholder="Entre com sua senha"></input>
+            placeholder="Digite sua senha"></input>
         </label>
         <label>
           <span>Confirmação: </span>
@@ -74,7 +74,7 @@ const Register = () => {
             required
             value={corfirmedPassword}
             onChange={(e) => setCorfirmedPassword(e.target.value)}
-            placeholder="Entre com sua senha"></input>
+            placeholder="Repita a senha"></input>
         </label>
         <button className="btn">Cadastrar</button>
         {error && <p className='error'>{error}</p>}

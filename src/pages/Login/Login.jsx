@@ -47,7 +47,7 @@ return (
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Entre com seu e-mail"
+          placeholder="Email"
         />
       </label>
       <label>
@@ -58,7 +58,7 @@ return (
           required
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="Entre com sua senha"
+          placeholder="Senha"
         />
       </label>
       {!loading && <button className="btn">Login</button>}
