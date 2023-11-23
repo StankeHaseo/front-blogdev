@@ -12,7 +12,8 @@ export const userAuthentication = () =>{
     const [error, setError] = useState(null)
     const [loading, setLoading] = useState(null)
     const [cancelled, setCancelled] = useState(false)
-
+    const [message, setMessage] = useState(false)
+    
     const auth = getAuth()
 
     function checkIfIsCancelled() {
@@ -120,6 +121,7 @@ export const userAuthentication = () =>{
         error,
         loading,
         signInWithEmailAndPassword,
-        loginUser
+        loginUser,
+        message
       };
 };

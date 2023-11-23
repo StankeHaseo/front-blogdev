@@ -9,6 +9,7 @@ const Register = () => {
   const [password, setPassword] = useState('')
   const [corfirmedPassword, setCorfirmedPassword] =useState('')
   const [error, setError] =useState('')
+  const [message, setMassage] = useState('')
 
   const{createUser, error: authError, loading} = userAuthentication()
 
@@ -76,8 +77,11 @@ const Register = () => {
             onChange={(e) => setCorfirmedPassword(e.target.value)}
             placeholder="Repita a senha"></input>
         </label>
+
         <button className="btn">Cadastrar</button>
+        {message && <p>Cadastrado com sucesso!</p>}
         {error && <p className='error'>{error}</p>}
+
       </form>
     </div>
   )
